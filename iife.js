@@ -8,5 +8,9 @@
 // console.log(greeting("Mansi"))
 
 (() => {
-    console.log("Hii");
+    console.log("Hii from anonymous arrow function");
+})();
+
+(function () {
+    console.log("Hii from anonymous function");
 })();
