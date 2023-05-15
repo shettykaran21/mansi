@@ -82,4 +82,19 @@ addToCart(() => {
     });
 });
 
+// then, catch
+addToCart()
+    .then(() => {
+        return order();
+    })
+    .then(() => {
+        return payment();
+    })
+    .then(() => {
+        return congrats();
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+
 loadData();
